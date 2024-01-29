@@ -31,8 +31,12 @@ class MenstrualCycleTest {
     @Test
     public void shouldReturnNextPeriod(){
         menstrualCycle.setPeriodStartDate("2024-01-10");
-        LocalDate startDate = LocalDate.parse(menstrualCycle.getPeriodStartDate());
-
-        assertEquals(startDate, menstrualCycle.getNextPeriod());
+       // LocalDate startDate = LocalDate.parse(menstrualCycle.getPeriodStartDate());
+        assertEquals("2024-02-03", menstrualCycle.getNextPeriod());
+    }
+    @Test
+    public void shouldReturnNextOvulation(){
+        menstrualCycle.setPeriodStartDate("2024-01-10");
+        assertEquals("2024-02-17", menstrualCycle.getNextOvulation());
     }
 }
