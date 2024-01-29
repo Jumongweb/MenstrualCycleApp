@@ -26,7 +26,6 @@ public class MenstrualCycle {
     }
     public int getPeriodCycleLength(){
         return periodCycleLength;
-        /* changes */
     }
 
     public LocalDate getNextPeriod(){

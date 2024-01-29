@@ -4,8 +4,6 @@ public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MenstrualCycle menstrualCycle = new MenstrualCycle();
-        System.out.println("Changes");
-        System.out.println("Two");
         System.out.println("MENSTRUAL CYCLE TRACKER\n");
         System.out.print("Which did your last period start (yyyy-mm-dd): ");
         String startDate = scanner.nextLine();
