@@ -33,12 +33,12 @@ public class Main{
         menstrualCycle.setPeriodCycleLength(cycleLength);
 
         System.out.println();
-        System.out.println("================================================================");
+        System.out.println("===============================================================");
         System.out.println("RESULT");
         System.out.println("Your next period date is " + menstrualCycle.getNextPeriod());
         System.out.println("Your next ovulation date is " + menstrualCycle.getNextOvulation());
         System.out.println("Your fertile period is " + menstrualCycle.getFertilePeriodBeforeOvulation() + " - " + menstrualCycle.getFertilePeriodAfterOvulation());
         System.out.println("Your safe period start on " + menstrualCycle.getSafeDayStart() + " end before " + menstrualCycle.getSafeDayEnd());
-        System.out.println("================================================================");
+        System.out.println("===============================================================");
     }
 }
