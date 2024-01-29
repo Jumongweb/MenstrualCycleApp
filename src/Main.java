@@ -4,7 +4,7 @@ public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MenstrualCycle menstrualCycle = new MenstrualCycle();
-
+        gffgs
         System.out.println("MENSTRUAL CYCLE TRACKER\n");
         System.out.print("Which did your last period start (yyyy-mm-dd): ");
         String startDate = scanner.nextLine();
@@ -33,6 +33,7 @@ public class Main{
         menstrualCycle.setPeriodCycleLength(cycleLength);
 
         System.out.println();
+        /* 10 */
         System.out.println("===============================================================");
         System.out.println("RESULT");
         System.out.println("Your next period date is " + menstrualCycle.getNextPeriod());
