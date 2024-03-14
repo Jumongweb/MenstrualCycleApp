@@ -28,11 +28,17 @@ public class MenstrualCycle {
         return periodCycleLength;
     }
 
-    public LocalDate getNextPeriod(){
+    /*public LocalDate getNextPeriod(){
         int totalDays = getPeriodLength() + getPeriodCycleLength();
         LocalDate startDate = LocalDate.parse(getPeriodStartDate());
 
         return startDate.plusDays(totalDays);
+    } */
+    public String getNextPeriod(String date){
+        int totalDays = getPeriodLength() + getPeriodCycleLength();
+        LocalDate startDate = LocalDate.parse(getPeriodStartDate());
+        date = String.valueOf(startDate.plusDays(totalDays));
+        return date;
     }
     public LocalDate getNextOvulation(){
         int ovulation = getPeriodCycleLength() / 2;

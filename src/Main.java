@@ -9,7 +9,7 @@ public class Main{
         String startDate = scanner.nextLine();
         menstrualCycle.setPeriodStartDate(startDate);
 
-        System.out.print("For how many days did you bleed. Ranges(2 - 7): ");
+        System.out.print("For how many days did you menstruate. Ranges(2 - 7): ");
         int bleedingLength = scanner.nextInt();
         while(bleedingLength < 2 || bleedingLength > 7){
             System.out.println("You need to see a doctor");
@@ -35,7 +35,7 @@ public class Main{
         /* 10 */
         System.out.println("===============================================================");
         System.out.println("RESULT");
-        System.out.println("Your next period date is " + menstrualCycle.getNextPeriod());
+        System.out.println("Your next period date is " + menstrualCycle.getNextPeriod(menstrualCycle.getPeriodStartDate()));
         System.out.println("Your next ovulation date is " + menstrualCycle.getNextOvulation());
         System.out.println("Your fertile period is " + menstrualCycle.getFertilePeriodBeforeOvulation() + " - " + menstrualCycle.getFertilePeriodAfterOvulation());
         System.out.println("Your safe period start on " + menstrualCycle.getSafeDayStart() + " end before " + menstrualCycle.getSafeDayEnd());
